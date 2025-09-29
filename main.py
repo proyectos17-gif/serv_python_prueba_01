@@ -12,6 +12,16 @@ FIREBASE_SERVER_KEY = "AAAA...tu_clave_aqui"
 API_PHP_URL = "https://pruebaproyecto1.atwebpages.com/test_conn.php"
 FCM_URL = "https://fcm.googleapis.com/fcm/send"
 
+# === ruta principal ===
+@app.route('/')
+def home():
+    return '''
+    <h2>🚀 Servidor Python en Render</h2>
+    <p><a href="/test-api">✅ Probar conexión con tu API PHP</a></p>
+    <p><a href="/get-data">🔁 Obtener datos de la base de datos</a></p>
+    <small>Tu backend para Android + FCM + PHP está funcionando.</small>
+    '''
+
 # === RUTA: Probar conexión con tu API PHP ===
 @app.route('/test-api')
 def test_api():
