@@ -9,7 +9,7 @@ app = Flask(__name__)
 FIREBASE_SERVER_KEY = "AAAA...tu_clave_aqui"
 
 # Tu API PHP en RunHosting
-API_PHP_URL = "https://pruebaproyecto1.atwebpages.com/test_conn.php"
+API_PHP_URL = "http://pruebaproyecto1.atwebpages.com/test_conn.php"
 FCM_URL = "https://fcm.googleapis.com/fcm/send"
 
 # === ruta principal ===
